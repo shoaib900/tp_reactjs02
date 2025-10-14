@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy,Suspense } from 'react'
 
-function App() {
+import Home from './components/Home'
+// import Acomp from './components/abc/Acomp';
+import Acomp from './components/Contextapi/Acomp';
+import Pcback from './components/cbmemo/Pcback';
+import Mdemo from './components/Memo/Mdemo';
+import Reducer from './components/Reducers/Reducer';
+// import About from './components/About'
+
+// const About = lazy( ()=> import("./components/About"))
+
+const App = () => {
+  // const [num,setNum] = React.useState(10);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Pcback /> */}
+
+      {/* <Mdemo /> */}
+
+      {/* <Acomp /> */}
+
+      <Reducer />
+      
+      {/* <Home />
+      <Suspense fallback={<div>loading...</div>}>
+      <About />
+      </Suspense> */}
+
+      {/* <Acomp number={num} /> */}
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
