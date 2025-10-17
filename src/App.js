@@ -8,6 +8,7 @@ import Mdemo from './components/Memo/Mdemo';
 import Reducer from './components/Reducers/Reducer';
 import SHome from './components/ReduxComponents/SimpleRedux/SHome';
 import RTKHome from './components/ReduxComponents/RTK/RTKHome';
+import FBHome from './compFB/FBHome';
 // import About from './components/About'
 
 // const About = lazy( ()=> import("./components/About"))
@@ -17,9 +18,11 @@ const App = () => {
   return (
     <div>
 
+      <FBHome />
+
       {/* <SHome /> */}
 
-      <RTKHome />
+      {/* <RTKHome /> */}
 
       {/* <Pcback /> */}
 

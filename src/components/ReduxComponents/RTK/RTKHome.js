@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector,useDispatch } from 'react-redux';
-import { decNumber, incNumber } from './redux/counterSlice';
+import { decNumber, incNumber, incrementByAmount } from './redux/counterSlice';
+
 
 const RTKHome = () => {
     const counter = useSelector(state => state.counter);
@@ -13,6 +14,8 @@ const RTKHome = () => {
         <br />
         <button onClick={()=> dispatch(incNumber() ) }>increment</button>
         <button onClick={()=> dispatch(decNumber() ) }>increment</button>
+        <hr />
+        <button onClick={()=> dispatch(incrementByAmount(5) ) }>increment by 5</button>
       
     </div>
   )
